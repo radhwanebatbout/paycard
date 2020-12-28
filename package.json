@@ -2,9 +2,14 @@
   "name": "paycard",
   "version": "1.0.0",
   "description": "Paycard app.",
-  "main": "index.js",
+  "private": true,
+
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'"
   },
   "repository": {
     "type": "git",
